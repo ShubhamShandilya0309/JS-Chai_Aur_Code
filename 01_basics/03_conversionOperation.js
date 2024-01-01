@@ -19,7 +19,7 @@ number
 NaN : Not A Number
  */
 
-/**********************Operations******************* */
+/* *********************Operations******************* */
 /*
 a+b addition
 a-b subtraction
