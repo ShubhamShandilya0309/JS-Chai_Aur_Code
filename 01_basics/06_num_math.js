@@ -2,10 +2,12 @@
 // console.log(score);
 // const balance= new Number(100)
 // console.log(balance);
-// console.log(balance.toFixed(1));
+// console.log(balance.toFixed(2));
 // console.log(balance.toPrecision(1));
 // console.log(typeof(balance.toString()))
 // numbers in js
+const hundreds=100000000;
+console.log(hundreds.toLocaleString('en-IN'));
 // ********************Math In Js***********************
 // console.log(Math);
 // console.log(Math.abs(-4));
