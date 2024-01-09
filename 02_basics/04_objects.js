@@ -26,5 +26,19 @@ const obj4= Object.assign({},obj1,obj2,obj3);
 // console.log(Object.keys(tinderUser));
 // console.log(Object.values(tinderUser));
 // console.log(typeof(Object.keys(tinderUser)));
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
-console.log(tinderUser.hasOwnProperty('isLogged'));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(tinderUser.hasOwnProperty('isLogged'));
+const course={
+    courseName:"Chai aur Code",
+    courseInstructor:"Hitesh Chaudhary",
+    coursePrice:999
+}
+const{courseInstructor : instructor}=course
+console.log(instructor);
+
+//json api call
+// {
+//     "course":"JS chai aur code",
+//     "instructor":"hitesh",
+//     "price":999
+// }
