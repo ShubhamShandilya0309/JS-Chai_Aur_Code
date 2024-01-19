@@ -1,0 +1,25 @@
+title.innerText
+'DOM learning on chai aur code.'
+title.textContent
+'DOM learning on chai aur code. test text'
+title.innerHTML
+'DOM learning on chai aur code. <span style="display: none;">test text</span>'
+
+const myul= document.querySelector('ul')
+undefined
+const turnGreen=myul.querySelector('li')
+undefined
+turnGreen.style.backgroundColor="green"
+'green'
+turnGreen.style.padding="10px"
+'10px'
+
+const temp=document.getElementsByClassName('list-item')
+Array.from(temp)
+(4) [li.list-item, li.list-item, li.list-item, li.list-item]0: li.list-item1: li.list-item2: li.list-item3: li.list-itemlength: 4[[Prototype]]: Array(0)
+const myConvertedArray=Array.from(temp)
+undefined
+myConvertedArray.forEach(function (li) {
+    li.style.color='orange';
+})
+undefined
