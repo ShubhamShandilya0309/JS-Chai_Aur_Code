@@ -1,10 +1,10 @@
-#Projected related to dom
-##Prject link
+# Projects related to dom
+## Project link
 https://stackblitz.com/edit/dom-project-chaiaurcode?file=index.html
 
-#Solution Code
+# Solution Code
 
-##Project1
+## Project1
 
 
 ```javascript
