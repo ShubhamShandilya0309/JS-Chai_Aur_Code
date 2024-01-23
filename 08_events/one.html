@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Events</title>
+    <style>
+        li{
+            /* list-style: none; */
+            color: aliceblue;
+        }
+        body{
+            background-color: #212121;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h2>Amazing Pictures</h2>
+    <div>
+        <ul id="images">
+            <li><img width="100px" id="building" src="../images/1.jpg" alt="building"></li>
+            <li><img width="100px" id="bridge" src="../images/2.jpg" alt=""></li>
+            <li><img width="100px" id="greenery" src="../images/3.jpg" alt=""></li>
+            <li><img width="100px" id="forest" src="../images/4.jpg" alt=""></li>
+        </ul>
+    </div>
+    <a id="google" href="https://www.google.co.in/">Google</a>
+</body>
+<script>
+    // document.getElementById("bridge").onclick=function(){
+    //     alert("Bridge Clicked");
+    // }
+    //attachEvent()
+    //jQuery -> on
+    /*type, timestamp, defaultPrevented, target, toElement, srcElement, currentTarget ,clientX, clientY , screenX ,screenY ,altKey , ctrlKey, shiftKey ,keyCode
+    */
+
+    // document.getElementById("images").addEventListener('click',function(e){
+    //     console.log("Images Touched");
+    //     e.stopPropagation();
+    // },true)//bubbling in false and capturing in true
+    // document.getElementById("bridge").addEventListener('click',function(e){
+    //     console.log("Bridge Touched");
+    // }, true)
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    //     console.log("Google Clicked !");
+    // })
+
+    document.getElementById('images').addEventListener('click',function(e){
+        console.log(e.target.tagName);
+        if(e.target.tagName ==='IMG'){
+            let removeIt=e.target.parentNode;
+            removeIt.remove();
+        }//removeIt.parentNode.removeChild(removeIt);
+        
+    },false)
+</script>
+</html>
