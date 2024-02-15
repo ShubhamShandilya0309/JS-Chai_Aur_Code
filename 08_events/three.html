@@ -15,12 +15,12 @@
         const myDate=new Date();
         console.log(str,myDate.toLocaleDateString());
     }
-    //const interValid=;
+    const star=setInterval(sayDate,1000,"Hi");
     document.getElementById('start').addEventListener('click',function(){
         setInterval(sayDate,1000,"Hi");
     })
     document.getElementById('stop').addEventListener('click',function(){
-        clearInterval(setInterval(sayDate,1000,"Hi"));
+        clearInterval(star);
     })
     
 </script>
